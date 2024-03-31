@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gerador de senha, gerador password">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div class="content">
+    <img  class="logo" src="./assets/gerador.png" alt="gerador de senha">
+    <main class="container-input">
+      <span>tamanho <span id="valor"></span> caracteres</span>
+      <input id="slider" class="slider" type="range" min="5" max="30" value="10">
+      
+      <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+    </main>
+    
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title"> Sua senha foi gerada</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Clique na senha para copiar</span>
+    
+    </div>
+      <footer>
+        Feito com ♥ por <a href="https://www.instagram.com/victor_ofc019/" target="_blank">Victor Pereira</a>
+      </footer>
+   </div> 
+   
+    <script src="script.js"></script>
+</body>
+</html>
